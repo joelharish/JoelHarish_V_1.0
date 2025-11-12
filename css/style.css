@@ -963,10 +963,10 @@ button:hover {
 
 /* Extra Large Devices (Desktops) */
 @media (max-width: 1200px) {
-    .aside {
-        position: fixed;
+
+    .aside .nav-toggler {
         display: flex;
-        left: 30px;
+        left: 20px;
     }
 
     .main-content {
@@ -1012,20 +1012,17 @@ button:hover {
 /* Medium Devices (Tablets) */
 @media (max-width: 992px) {
     .aside {
-        position: fixed;
-        left: -270px;
-        transition: all 0.3s ease;
-        z-index: 100;
-    }
-    .main-content {
-        padding-left: 0px;
-    }
-
-    .aside {
         width: 220px;
         padding: 20px;
     }
 
+    .aside .nav-toggler {
+        display: flex;
+        left: 20px;
+    }
+    .main-content {
+        padding-left: 0px;
+    }
 
     .home {
         flex-direction: column;
@@ -1185,12 +1182,6 @@ button:hover {
 
 /* Extra Small Devices (Small Phones) */
 @media (max-width: 480px) {
-    .aside {
-        position: fixed;
-        left: -270px;
-        transition: all 0.3s ease;
-        z-index: 100;
-    }
 
     .home .home-info h3.hello,
     .home .home-info h3.my-pro {
