@@ -282,6 +282,15 @@ ul {
     margin-right: 15px;
 }
 
+.more-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;               /* space between button & icons */
+  margin-top: 20px;
+}
+
 .home {
     min-height: 100vh;
     display: flex;
@@ -362,7 +371,6 @@ h3.my-pro {
     justify-content: center;
     flex-flow: nowrap;
     list-style: none;
-    padding: 0 25%;
 }
 
 .social li {
@@ -936,6 +944,72 @@ button:hover {
       margin-left: 15px;
     }
 
+    /* Footer */
+.footer {
+  padding: 20px 20px;
+  text-align: center;
+  background: #1e1e1e;
+  margin-top: 60px;
+  color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: auto;
+}
+
+.footer-logo h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer-logo span {
+  font-family: "Clicker Script", cursive;
+  color: var(--skin-color);
+}
+
+.footer-logo p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.footer-social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 25px 0;
+}
+
+.footer-social li {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  transition: transform 0.3s ease;
+}
+
+.footer-social li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-social li:hover {
+  transform: translateY(-5px);
+}
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--skin-color);
+}
+
 /* Animations */
 @keyframes zoomIn {
     from {
@@ -1007,6 +1081,15 @@ button:hover {
     .contact-section {
         padding: 50px 60px;
     }
+    .more-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;               /* space between button & icons */
+        margin-top: 20px;
+    }
+
 }
 
 /* Medium Devices (Tablets) */
@@ -1038,6 +1121,7 @@ button:hover {
     .social {
         padding: 0 10%;
         gap: 15px;
+        margin: 20px 0;
     }
 
     .contact-section {
@@ -1081,6 +1165,36 @@ button:hover {
     .archvement {
         margin-top: 650px; 
     }
+    .more-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;               /* space between button & icons */
+        margin-top: 20px;
+    }
+
+    .home-img::after {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+        bottom: -40px;
+        right: 150px;
+    }   
+
+    .home-img::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
+        left: 150px;
+        top: -40px;
+    }
 
     /* .portfolio{
         margin-top: 650px;
@@ -1107,7 +1221,7 @@ button:hover {
 
     .home .home-img img {
         height: auto;
-        width: 70%;
+        width: 50%;
         margin: 20px auto 0;
     }
 
@@ -1135,7 +1249,7 @@ button:hover {
     }
 
     .archvement .container {
-        margin-top: 200px;/* smaller margin for mobile */
+        margin-top: 250px;/* smaller margin for mobile */
     }
 
     .portfolio{
@@ -1177,6 +1291,14 @@ button:hover {
     .certificate-group h4{
         font-size: 16px;
         margin-left: 10px;
+    }
+    .more-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;               /* space between button & icons */
+        margin-top: 20px;
     }
 }
 
@@ -1220,6 +1342,57 @@ button:hover {
 
     .portfolio .container{
         margin-top: 500px;
+    }
+
+    .more-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;               /* space between button & icons */
+        margin-top: 20px;
+    }
+
+    .more-links .social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        gap: 10px;
+    }
+
+    .more-links .social li {
+        width: 60px;
+        height: 60px;
+    }
+
+    .more-links .hire-me {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+
+    .home-img::after {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-bottom: 10px solid var(--skin-color);
+        border-right: 10px solid var(--skin-color);
+        bottom: -40px;
+        right: 20px;
+        display: none;
+    }   
+
+    .home-img::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-top: 10px solid var(--skin-color);
+        border-left: 10px solid var(--skin-color);
+        left: -20px;
+        top: -40px;
+        display: none;
     }
 }
 
