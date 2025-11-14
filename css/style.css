@@ -443,6 +443,11 @@ h3.my-pro {
     color: #fff;
 }
 
+.social a:hover,
+.social a:focus-visible.dark {
+    border: 1px solid var(--bg-black-900);
+}
+
 .social a:hover::after,
 .social a:focus-visible::after {
     inset-block-start: 0;
